@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+:root {
+  --white: #ffffff;
+  --blue: #00439c;
+  --black: #000000;
+  --lighter-black: #1f1f1f;
+  --grey: #2c2c2c;
+  --orange: #fc551d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-btn:hover {
+  color: var(--orange);
+  border-color: var(--orange);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-btn:focus {
+  color: var(--orange);
+  border-color: var(--orange);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.default-list {
+  border: 1px solid var(--grey);
+  padding: 0.6rem 1.2rem;
+  border-radius: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.create-post-collapsible-item .ant-collapse-content-box {
+  padding: 12px 16px 12px 12px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.create-post-input {
+  background-color: #525252;
+  color: var(--white);
+  border: none;
+}
+
+.create-post-input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.course-card .ant-card-cover {
+  position: relative;
+}
+
+.button-secondary {
+  background-color: #d3d3d3;
+}
+
+.button-secondary:hover {
+  background-color: #dcdcdc;
+  border-color: #dcdcdc;
+  color: #808080;
+}
+
+.button-secondary:focus {
+  background-color: #dcdcdc;
+  border-color: #dcdcdc;
+  color: #808080;
+}
+
+.button-danger {
+  background-color: #c62121;
+  border-color: #c62121;
+  color: var(--white);
+}
+
+.button-danger:hover {
+  background-color: #8d0101;
+  border-color: #8d0101;
+  color: var(--white);
+}
+
+.button-danger:focus {
+  background-color: #8d0101;
+  border-color: #8d0101;
+  color: var(--white);
+}
+
+.button-success {
+  background-color: #5ca08e;
+  border-color: #5ca08e;
+  color: var(--white);
+}
+
+.button-success:hover {
+  background-color: #2eb56e;
+  border-color: #2eb56e;
+  color: var(--white);
+}
+
+.button-success:focus {
+  background-color: #2eb56e;
+  border-color: #2eb56e;
+  color: var(--white);
 }

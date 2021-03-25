@@ -1,0 +1,23 @@
+.ant-list-item-meta-title {
+    margin-bottom: 0 !important;
+}
+
+.sidebar-link {
+    color: var(--black);
+}
+
+.sidebar-link:hover {
+    color: var(--orange);
+}
+
+.ant-list-item {
+}
+
+.selected {
+    background-color: var(--black);
+    border-radius: 1rem;
+}
+
+.selected .sidebar-link {
+    color: var(--white);
+}
